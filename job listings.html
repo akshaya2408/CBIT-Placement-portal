@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            background: #699fd4;
+            color: white;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+        .job-list {
+            list-style: none;
+            padding: 0;
+        }
+        .job-item {
+            background: #ffffff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background: #699fd4;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Job Listings</h1>
+        </div>
+        <ul class="job-list" id="jobList">
+            <li class="job-item">Software Engineer - Google <br><a href="#" class="btn">Apply Now</a></li>
+            <li class="job-item">Data Analyst - Amazon <br><a href="#" class="btn">Apply Now</a></li>
+            <li class="job-item">Web Developer - Microsoft <br><a href="#" class="btn">Apply Now</a></li>
+            <li class="job-item">Frontend Developer - JPMC <br><a href="#" class="btn">Apply Now</a></li>
+        </ul>
+    </div>
+</body>
+</html>

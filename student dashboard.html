@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .heading {
+            text-align: center;
+        }
+        .heading img {
+            width: 50px;
+        }
+        .heading h1 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .subhead {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .details ol {
+            padding: 0;
+            list-style: none;
+        }
+        .details li {
+            margin-bottom: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #699fd4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .skill-list {
+            margin-top: 10px;
+            padding: 0;
+            list-style: none;
+        }
+        .skill-list li {
+            background: #699fd4;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .skill-list li:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <img src="https://gyaanarth.com/wp-content/uploads/2022/05/cbit3.jpg" alt="CBIT Logo">
+            <h1>Chaitanya Bharathi Institute of Technology (A)</h1>
+            <p>Chaitanya Bharathi P.O., Kokapet, Hyderabad - 500 075, Telangana</p>
+        </div>
+        <hr>
+        <div class="subhead">
+            <h2>ACADEMIC & EXAMINATION CELL</h2>
+            <h3><u>STUDENT DASHBOARD</u></h3>
+        </div>
+        <form>
+            <div class="details">
+                <ol>
+                    <li>
+                        <label for="name">Name of the Student:</label>
+                        <input type="text" id="name" required>
+                    </li>
+                    <li>
+                        <label for="roll_no">Roll No:</label>
+                        <input type="number" id="roll_no" required>
+                    </li>
+                    <li>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" required>
+                    </li>
+                    <li>
+                        <label for="contact">Contact Number:</label>
+                        <input type="number" id="contact" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </li>
+                    <li>
+                        <label for="program">Program:</label>
+                        <select id="program" required>
+                            <option value="">Select BE/BTECH</option>
+                            <option value="BE">BE</option>
+                            <option value="BTECH">BTECH</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="resume">Resume:</label>
+                        <input type="file" id="resume" accept=".pdf">
+                    </li>
+                    <li>
+                        <label for="skillInput">Skills:</label>
+                        <input type="text" id="skillInput" placeholder="Enter a skill">
+                        <button type="button">Add Skill</button>
+                        <ul class="skill-list" id="skillList"></ul>
+                    </li>
+                </ol>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
